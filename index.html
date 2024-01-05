@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <div class="aaa">
+    <div class="matrix">
       <img src="./eisenhower-matrix.jpg">
       <a 
         class="more_inf" 
@@ -16,9 +16,9 @@
     </div>
     <div class="centered-main-page-element">
       <p id="topSectionForAddingElementToList">
-        <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input id="new-task"class="task" type="text">
+        <label for="new-task__input">Add Item</label>
+        <div class="new-task__input-wrapper">
+          <input id="new-task__input"class="task__input" type="text">
           <button>Add</button>
         </div>
       </p>
@@ -26,23 +26,23 @@
       <ul id="incompleteTasks">
         <li>
           <input type="checkbox">
-          <label class="task">Pay Bills</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
+          <label class="task__label">Pay Bills</label>
+          <input type="text" class="task__input">
+          <button class="task__button_edit">Edit</button>
+          <button class="task__button_delete">
             <img src="./remove.svg">
           </button>
         </li>
         <li class="editMode">
           <input type="checkbox">
-          <label class="task">Go Shopping</label>
+          <label class="task__label">Go Shopping</label>
           <input 
             type="text"
             value="Go Shopping" 
-            class="task"
+            class="task__input"
           >
-          <button class="edit">Save</button>
-          <button class="delete">
+          <button class="task__button_edit">Save</button>
+          <button class="task__button_delete">
             <img src="./remove.svg">
           </button>
         </li>
@@ -51,10 +51,10 @@
       <ul id="completed-tasks">
         <li>
           <input type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
+          <label class="task__label">See the Doctor</label>
+          <input type="text" class="task__input">
+          <button class="task__button_edit">Edit</button>
+          <button class="task__button_delete">
             <img src="./remove.svg">
           </button>
         </li>
